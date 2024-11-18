@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestExpenseClaims(FrappeTestCase):
+class TestLeaveTypes(FrappeTestCase):
 	pass

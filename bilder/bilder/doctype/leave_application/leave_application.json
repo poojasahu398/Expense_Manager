@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-12 11:07:18.115562",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "emloyee",
+  "start_date",
+  "reason_for_leave",
+  "column_break_ciyn",
+  "leave_type",
+  "amended_from",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Leave Application",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "emloyee",
+   "fieldtype": "Link",
+   "label": "Emloyee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Select",
+   "label": "Leave Type",
+   "options": "\nWellness Leave\nCasual Leave\nWedding Leave\nBereavement Leave\nMaternity Leave\nCompensatory Leave"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_ciyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "reason_for_leave",
+   "fieldtype": "Small Text",
+   "label": "Reason for Leave"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-23 16:30:45.891189",
+ "modified_by": "Administrator",
+ "module": "Bilder",
+ "name": "Leave Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

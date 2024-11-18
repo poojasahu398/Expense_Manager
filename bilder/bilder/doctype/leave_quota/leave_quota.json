@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-10-22 15:34:07.168606",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "leave_type",
+  "maximum_allowed",
+  "leave_taken",
+  "leave_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Select",
+   "label": "Leave Type",
+   "options": "\nWellness Leave\nCasual Leave\nWedding Leave\nBereavement Leave\nMaternity Leave\nCompensatory Leave"
+  },
+  {
+   "fieldname": "maximum_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Allowed"
+  },
+  {
+   "fieldname": "leave_taken",
+   "fieldtype": "Read Only",
+   "label": "Leave Taken"
+  },
+  {
+   "fieldname": "leave_balance",
+   "fieldtype": "Read Only",
+   "label": "Leave Balance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-22 15:38:13.551672",
+ "modified_by": "Administrator",
+ "module": "Bilder",
+ "name": "Leave Quota",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

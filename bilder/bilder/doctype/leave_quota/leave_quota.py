@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ExpenseClaims(Document):
+class LeaveQuota(Document):
 	pass
